@@ -4,15 +4,119 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
+<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+	<!-- Javascript -->
+	<script src="https://code.jquery.com/jquery-2.1.4.js
+	"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
 	<!-- Title -->
 	<title>Fauch</title>
 </head> 
+
 <body>
-
-<h1>TEST</h1>
-
+<div class="container-fluid"> <!-- start body container -->
 
 
+
+
+	<!-- Body -->
+
+
+	<!-- nav -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+      <ul class="nav navbar-nav">
+        <li><a id="projects">PROJECTS</a></li>
+        <li><a id="hire">HIRE</a></li>
+      </ul>
+  </div> <!-- end navbar container-fluid -->
+</nav> 
+	
+	<!-- end nav -->
+
+<!-- first section -->
+	<div class="container" id="section1">
+		<h1>FAUCH</h1>
+		<mark><em>/pronounced: faux-shh/</em></mark>
+	</div>
+	
+
+
+<!--  Javascript to toggle the main body texts -->
+<script>
+$(function() {
+
+$("#projects").on('click', function() {
+	$("#projects-text").show();
+	$("#freelance-text").hide();
+})
+
+$("#hire").on('click', function() {
+	$("#projects-text").hide();
+	$("#freelance-text").toggle();
+})
+
+
+});
+</script>
+
+<!--  END Javascript to toggle the main body texts -->
+
+
+<div class="body-texts">
+
+<!-- PROJECTS BODY TEXT -->
+	<div class="col-md-4" id="projects-text">
+	pr0ject text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+
+<!-- FREELANCE BODY TEXT -->
+	<div class="col-md-4" id="freelance-text">
+		freelance text here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- End body container -->
 
 
 </body>
