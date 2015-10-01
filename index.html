@@ -2,109 +2,168 @@
 <head>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 <!-- Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 
-	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
 
 
-	<!-- Javascript -->
+<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery-2.1.4.js
 	"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-
-
-	<!-- Title -->
-	<title>Fauch</title>
+<!-- Title -->
+	<title>Fauch-layout</title>
 </head> 
 
 <body>
 <div class="container-fluid"> <!-- start body container -->
 
-
-
-
 	<!-- Body -->
+
+<div class="container-fluid" id="body-container">
+	<div class="row">
+	
+	<!-- top padding to push content down -->
+		<div id="top-padding">
+		</div>
+
 
 
 	<!-- nav -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
-    </div>
-      <ul class="nav navbar-nav">
-        <li><a id="projects">PROJECTS</a></li>
-        <li><a id="hire">HIRE</a></li>
-      </ul>
-  </div> <!-- end navbar container-fluid -->
-</nav> 
-	
+		<div class="col-md-3" id="nav-container">
+			<div id="nav-content">
+				<ul>
+					<li id="projects-button">Projects</li>
+					<li id="freelance-button">Freelance</li>
+					<li id="blog-button">Blog</li>
+					<li id="chat-button">Chat</li>
+				</ul>
+			</div>
+		</div>
 	<!-- end nav -->
-
-<!-- first section -->
-	<div class="container" id="section1">
-		<h1>FAUCH</h1>
-		<mark><em>/pronounced: faux-shh/</em></mark>
-	</div>
-	
 
 
 <!--  Javascript to toggle the main body texts -->
-<script>
-$(function() {
+		<script>
+		$(function() {
 
-$("#projects").on('click', function() {
-	$("#projects-text").show();
-	$("#freelance-text").hide();
-})
+		$("#projects-button").on('click', function() {
+			$("#projects-text").show();
+			$("#freelance-text").hide();
+			$("#blog-text").hide();
+			$("#chat-text").hide();
 
-$("#hire").on('click', function() {
-	$("#projects-text").hide();
-	$("#freelance-text").toggle();
-})
+		})
+
+		$("#freelance-button").on('click', function() {
+			$("#projects-text").hide();
+			$("#freelance-text").show();
+			$("#blog-text").hide();
+			$("#chat-text").hide();
+		})
+
+		$("#blog-button").on('click', function() {
+			$("#projects-text").hide();
+			$("#freelance-text").hide();
+			$("#blog-text").show();
+			$("#chat-text").hide();
+		})
+
+		$("#chat-button").on('click', function() {
+			$("#projects-text").hide();
+			$("#freelance-text").hide();
+			$("#blog-text").hide();
+			$("#chat-text").show();
+		})
 
 
-});
-</script>
+		});
+		</script>
 
 <!--  END Javascript to toggle the main body texts -->
 
 
-<div class="body-texts">
+	<!-- PROJECTS BODY TEXT -->
 
-<!-- PROJECTS BODY TEXT -->
-	<div class="col-md-4" id="projects-text">
-	pr0ject text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="col-md-9 .col-md-offset-2" id="body-text-container">
+			<div class="body-texts" id="projects-text">
+					<p>
+						I work on <a href="http://ch33.ky"target="_blank">ch33.ky</a> with friends. 
+					</p>
+					<p>
+						We like to think of it as a three legged stool. 
+					</p>
+				<blockquote>
+					<p>
+						Cheeky Community is a long-form, thoughtful, community-over-email. We discuss a new startup idea every week day, and a reflection on Saturdays. Think of it as a daily workout for your brain. We respect the fact that Sunday is a day of rest. 
+					</p>
+					<p>
+						<a href="http://ch33.ky/ventures"target="_blank">Cheeky Ventures</a> is our consulting arm. We're gathering a few smart friends together and pooling clients, resources, expertise and SG&A. 
+					</p>
+					<p>
+						Cheeky Labs makes stuff. Sometimes, exceptional ideas come out of the community. When there's enough interest from enough smart people, we spin them up into comnies. Invisible is launching now. You can get in touch <a href="mailto:dfauchier@ch33.ky?Subject=Tell%20me%20about%20Invisible" target="_top">here.</a> 
+					</p>
+				</blockquote>	
+			</div>
+
+			<div class="body-texts" id="freelance-text">
+				<p>I'm a partner at Cheeky Ventures. I freelance with companies that are scaling up, helping with data, product and marketing. Aka the three components to growth. </p>
+
+				<p>I also occasionally help out on funding rounds (deal terms, structure etc.) and advise on fintech (state of the ecosystem, tech stacks, unique challenges in the industry). </p>
+
+				<p>If I can't help you, <a href="mailto:dfauchier@ch33.ky?Subject=Who%20can%20help%20me?" target="_top">someone at Ventures can.</a></p>
+
+
+
+			</div>
+
+			<div class="body-texts" id="blog-text">
+				<p>Occasionally, i <a href="http://dfauchier.wordpress.com"target="_blank">write.</a>
+				More often, <a href="http://sharedli.st/dfauchier"target="_blank">i read.</a> </p>
+			</div>
+
+			<div class="body-texts" id="chat-text">
+				Don't be a stranger. <a href="mailto:dfauchier@ch33.ky?Subject=Hi&body=Well%20hey%20there%20David%2C%20%0A%0A" target="_top">Sah hi.</a> If we're in the same town, coffee is on me.
+				<br>
+				<br>
+				And remember, <a href="http://five.sentenc.es"target="_blank">sentenc.es.</a> 
+
+
+			</div>
+
+			
+		</div>
+
+<!-- Footer -->
+<!-- Footer end -->
+
 	</div>
-
-
-<!-- FREELANCE BODY TEXT -->
-	<div class="col-md-4" id="freelance-text">
-		freelance text here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</div>
-
-
 </div>
 
 
+
+
+
+
+<div class="container" id="projects-container">
+	<div class="row">
+		
+	</div>
+</div>
+
+
+
+<!-- FREELANCE BODY TEXT -->
+	
 
 
 
@@ -121,3 +180,5 @@ $("#hire").on('click', function() {
 
 </body>
 </html>
+
+
