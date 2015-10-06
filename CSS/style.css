@@ -4,7 +4,7 @@ body {
 	font-weight: 400;
 	line-height: 1.7em;
 	letter-spacing: .01em;
-		background-color: #7EFAC5;
+		background-color: #F3DFCB;
 
 }
 
@@ -51,7 +51,12 @@ margin: -18px;
 	width: 90%;
 	margin: 0 auto;
 	padding: 50px;
+	border-radius: 7px;
+	
+	box-shadow: 0px 10px 72px 0px rgba(0,0,0,0.3);
 
+/*-webkit-box-shadow: 0px 13px 72px 12px rgba(235,235,235,1);
+	-moz-box-shadow: 0px 13px 72px 12px rgba(235,235,235,1);*/
 }
 
 .body-texts p {
@@ -59,7 +64,7 @@ margin: -18px;
 }
 
 #body-text-container {
-	background-color: #7EFAC5;
+	background-color: #F3DFCB;
 	max-width: 900px;
 
 
