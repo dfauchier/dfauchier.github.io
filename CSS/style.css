@@ -1,27 +1,32 @@
 body {
-/*	font-family: 'Raleway', sans-serif;
-*/
 	font-family: 'raleway', sans-serif;
-
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 2em;
 	letter-spacing: .02em;
 	background-color: #f5f3f3;
 	word-spacing: 0px;
+	color: #27273B;
 
 }
 
 a {
 	text-decoration: none;
+		color: #428afc;
+
 }
 
 a:hover {
 	text-decoration: none;
+	color: #27273B;
+
+
 }
 
 a:visited {
 	text-decoration: none;
+	color: #428afc;
+
 }
 
 #body-content {
