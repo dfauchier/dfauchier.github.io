@@ -1,3 +1,3 @@
 # Fauch.co
 
-<p>Just a little personal website.</p>
+<p>Personal website.</p>
