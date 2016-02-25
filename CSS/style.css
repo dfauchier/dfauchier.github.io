@@ -3,32 +3,43 @@ body {
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 2em;
-	letter-spacing: .02em;
-	background-color: #f5f3f3;
-	word-spacing: 0px;
+/*	letter-spacing: .02em; */	
+	background-color: #fbfbfb;
 	color: #27273B;
 
 }
 
 a {
 	text-decoration: none;
-		color: #428afc;
+		color: #0043b0;
 
 }
 
 a:hover {
 	text-decoration: none;
-	color: #27273B;
+	color: #0043b0;
 
 
 }
 
 a:visited {
 	text-decoration: none;
-	color: #428afc;
+	color: #0043b0;
 
 }
 
 #body-content {
-	padding-top: 5vh;
+	/*padding-top: 5vh;*/
+	/*background-color: green;*/
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	/*vertical-align: bottom;*/
+	top: 50%;
+  	transform: translateY(-50%);
+
+}
+
+.ghost {
+	height: 100vh;
 }
